@@ -1,0 +1,9 @@
+{
+	"name": "dataMindsDF",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3fd89224-3b64-42a8-9853-4b9fa7344765",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

@@ -2,7 +2,7 @@
 	"name": "ADLS_BIN_AdventureWorks",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServer1",
+			"referenceName": "AzureDataLakeStorage",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -14,7 +14,10 @@
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "AzureBlobFSLocation",
+				"fileName": "@{dataset().Entity}.tsv",
+				"folderPath": "Raw",
+				"fileSystem": "lakeroot"
 			}
 		}
 	}
